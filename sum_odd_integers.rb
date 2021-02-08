@@ -11,3 +11,21 @@
 # 16
 
 p "Enter at least 2 numbers, separated by spaces:"
+numbers = gets.chomp
+numbers = numbers.split(" ")
+
+int_numbers = numbers.map(&:to_i)
+
+sum = int_numbers.select(&:odd?).sum
+
+p sum
+
+
+
+
+
+
+
+
+  
+

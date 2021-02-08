@@ -37,3 +37,21 @@
 
 
 p "Enter an integer"
+integer = gets.chomp.to_i
+
+
+  if integer % 3 == 0
+    word = "Pling" 
+  else 
+    word = ""
+  end
+  
+  if integer % 5 == 0
+    word = word + "Plang"
+  end
+  
+  if integer % 7 == 0
+    word = word + "Plong"
+  end
+
+  p word
